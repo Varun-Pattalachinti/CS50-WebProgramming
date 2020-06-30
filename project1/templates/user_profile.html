@@ -1,0 +1,46 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Hello {{jinja_username}}!
+    </title>
+  </head>
+  <form action="" method= "post">
+    <input type="submit" name="button" value="logout">
+  </form>
+  <h1> Search </h1>
+  <form action="" method="post">
+    <input type="text" name="isbn" placeholder="enter isbn">
+    <input type="text" name="title" placeholder="enter title">
+    <input type="text" name="author" placeholder="enter author name">
+    <input type="submit" name="button" value="search">
+  </form>
+  <h1>Search Results</h1>
+  <table>
+    <tr>
+      <th>title</th>
+      <th>author</th>
+      <th>ISBN</th>
+    </tr>
+    {% for search_result in search_results %}
+    <tr>
+        <form action="" method ="post">
+          <td id="title">
+            <input type="submit" name="book_button_title" value="{{search_result[2]}}">
+            <input type="hidden" name= "book_button_name" value= "{{search_result[1]}}">
+            <input type="hidden" name= "book_button_isbn" value= "{{search_result[0]}}">
+          </td>
+
+
+        <td>
+          {{search_result[1]}}
+        </td>
+        <td>
+            {{search_result[0]}}
+        </td>
+      </form>
+
+    </tr>
+    {% endfor %}
+  </table>
+</html>

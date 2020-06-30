@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+      {{title_render}}
+    </title>
+  </head>
+  <body>
+    <h1>{{title_render}}</h1>
+    <h3>Good Reads Average score: {{average_rating}} </h3>
+    <h3>Total Number of Reviews: {{ratings_count}} </h3>
+    <h2> Add Review </h2>
+    <form action="" method="post">
+        <input type="text" name="post_review" placeholder="Enter your Review">
+        <input type="number" name="rating" placeholder="Enter your Rating Number between 1 and 5">
+        <input type="submit" name="submit_button" value="Post">
+    <form>
+    <div> {{message}} </div>
+    <h1>Reviews</h1>
+    <table>
+      <tr>
+        <th>Review</th>
+        <th>Rating</th>
+        <th>Username</th>
+        </tr>
+        {% for review in review_db %}
+      <tr>
+        <td>
+          {{review[1]}}
+          </td>
+          <td>
+            {{review[4]}}
+            </td>
+            <td>
+              {{review[3]}}
+              </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </body>
+</html>
