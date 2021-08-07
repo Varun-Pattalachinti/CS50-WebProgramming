@@ -1,0 +1,95 @@
+db.execute("DELETE FROM reviews WHERE book_id = :book_id AND username = :username",{"id":isbn_number,"username":username})
+db.execute("DELETE FROM reviews
+      WHERE isbn_number = 'Tokyo'")
+
+{
+    "title": "Memory",
+    "author": "Doug Lloyd",
+    "year": 2015,
+    "isbn": "1632168146",
+    "review_count": 28,
+    "average_score": 5.0
+}
+
+
+
+from flask import jsonify
+
+@app.route("/api/<int:isbn>")
+def book_api(isbn):
+"""
+return json
+""" 
+
+#if isbn is not in database return 404 error 
+
+#get book value if it exists
+
+
+
+
+
+The hardware lifecycle can be improved by a system administrator in the procurement phase by collaborating with vendors so that,"the cheapest option online" is not the cheapest option available. Furthermore, this will increase standardization and allow for laptops to be easily replaced and maintained. This would also decrease the wait time for employment of hardware. 
+Another immediate fix would be to the tracking of computers through QR codes and an auditing system. 
+
+A system administrators immediate course of action would also be to build the inventory system that is mentioned in the consultation (second paragraph). [I don't really know what needs to be configured and installed in the network to configure an inventory service that audits computer's on the system] If I were to go from first principles, I would try to create a service on a virtualized server that runs NTP to probe if the computer is still on the server. I would also create a database and corresponding software that keeps track of computers and the users that are using the computer. I would also implement a regular monthly audit of hardware to make sure that it is still on the network. I am also fairly sure that a DHCP server will have IP addresses for all hardware systems that are connected to the network, making it easy to correspond the hardware with a QR code, an IP address, and a status check to NTP and the DHCP servers will make sure that a system administrator can keep track of inventory.
+
+A TFTP server would need to to also be implemented (physically or virtually) so that systems on the network can be pxe booted with software installation files. All client software and a standardized Linux distribution will be installed on all computers.
+
+The fourth paragraph clearly spells out a use case for an OpenLDAP service in order to manage user roles and their usernames and passwords. Obviously, this will need to have multiple physical backups that are also secure. I also believe an LDAP system will be useful with the administration of IT infrastructure that is brought up in paragraph two. 
+
+The last paragraph highlights that many of IT services in the company are administered in the cloud. Making sure to have software that helps the system administrator ensure the health of a server would be essential. Also being able to directly contact a cloud representative would also be highly recommended.
+
+Overall, I think that this company mainly lacks a good directory service on its network that can manage the users and devices on the network. I also believe a DHCP server would be important for the company
+
+
+
+
+The first improvement to the process would be to have direct vendor communication as well as have a few devices in inventory (which can now be possible from the discounts achieved by having connections directly on vendors). 
+
+I would also recommend implementing software such as Slack as a messaging system. I would also make sure that all service software is installed automatically once the device is on active directory through TFTP ,and any changes to client or server software is first implemented on a test server and then rolled into the product servers.
+
+For Active Directory, I would use a more role-based approach to assign permissions on the network, which would make it easier to disable previous employees in the nonprofit.
+
+The open-source ticketing service can best be handled by providing a tutorial on a file storage service on the network that can be easily accessed by employees in order to allow for better handling of problems. I would also add tutorials for other common problems on the file storage system.
+
+I would recommmend having a backup server online so that requests can be processed by the backup server if the main server goes offline. I would also have a centralized network bug logger service so that I can review  why the web server has gone down.
+
+
+
+
+A good improvement for the system is to allow for TFTP or more generally FTP to allow for pxe booting of installation files. Another improvement would be to have a ticketing system/centralized bug logging and activity management on a server on the network that allows you to log all IT-related requests that users have, and all bugs on the network.
+
+I would also recommend having some backups of servers and services on the cloud. I would also recommend virtualization of servers to decrease the cost. I would also make sure that there are test and production servers so that changes and features can be rolled back.
+
+With regard to the third paragraph - a proper implementation of a file storage service on the network is key along with multiple backup servers (possibly on the cloud) and RAID storage to make sure that customer data is handled with care. Furthermore security is also an issue that needs to be handled by the system administrator. The files storage service could be handled by Samba, especially because the primary operating system of the company's recources is WindowsOS. 
+
+
+OINTB - Counterpublics and Religion
+"Work on society"
+
+-counterpublic
+popular culture as a couterpublic
+OINTB counterpublic case-study w/religion
+
+pop culture stimilates 
+public sphere 
+private spaces
+public sphere is an intersection of official governemnt and private sphere
+(ex. townhall)
+special spaces allow for interaction of population(matter)
+internet as public sphere
+
+public sphere is idealistic,nonconforming views are not permitted
+not equitable built on social hierarchies
+counterpublic - // parallel discursive for subordinate people
+pre-organize 1960s civil rights
+religious spaces are kind of counterpublic
+religion and private prisons /jewish religion
+ointb (19:00)
+religion as a counterpublic space
+
+<script id="welcomeUserScript" type =
+need to hard refresh ctrl+f5
+
+

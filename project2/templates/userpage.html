@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+<script id="createUserFormScript" type = "text/x-handlebars-template">
+  <form>
+    <label for = "username"> Enter what you want people in chat to call you: </label>
+    <input id = "username" type ="text" required>
+    <input id="submitUsername" type="submit" value ="Create your Name">
+  </form>
+</script>
+<script id="welcomeUser" type = "text/x-handlebars-template">
+  {% raw -%}
+    <h1> Welcome {{user}}! </h1>
+  {%- endraw %}
+</script>
+<script id="seeallchannelsscript" type = "text/x-handlebars-template">
+  <h3>Channel Names </h3>
+  {%raw -%}
+    {{#each channels}}
+      <li>
+        <div>{{this}}</div>
+        <form class="selectchannel" id = "{{this}}">
+          <input id="selectchannelname" type="submit" value="select channel">
+        </form>
+      </li>
+    {{/each}}
+  {%- endraw %}
+</script>
+<script id="addchannelscript" type = "text/x-handlebars-template">
+  <form id="addform">
+    <label for = "channelname">Enter the name of the new channel: </label>
+    <input id = "channelname" type = "text" required>
+    <input id = "submitchannelname" type = "submit" value="add channel">
+  </form>
+</script>
+<script id="displaychannelmsgsscript" type ="text/x-handlebars-template">
+  <h1> Messages </h1>
+  {%raw -%}
+    {{#each message}}
+    <li>{{this}}</li>
+    {{/each}}
+  {%- endraw %}
+</script>
+<script id="addmessagescript" type="text/x-handlebars-template">
+  <form id = "addmessageform">
+    <label for = "addmessagetext">Enter your message:</label>
+    <input id="addmessagetext" type="text" required>
+    <input id="submitmessage" type="submit" value="add message">
+  </form>
+</script>
+<script src="{{url_for('static', filename='createUserFunction.js')}}"></script>
+<script src="{{url_for('static', filename='seeAllChannels.js')}}"></script>
+<script src="{{url_for('static', filename='addNewChannel.js')}}"></script>
+<script src="{{url_for('static',filename='displayChannelMsgs.js')}}"></script>
+<script src ="{{url_for('static',filename = 'addMessage.js')}}"></script>
+<title>
+  Welcome to Flack!
+</title>
+<body>
+  <div id="addForm">
+  </div>
+  <div id = "welcomeUserDiv">
+  </div>
+  <ul id = "channellist" >
+  </ul>
+  <div id="addchannel">
+  </div>
+  <div id = "displaychannelmsg">
+  </div>
+  <div id= "addmessage">
+  </div>
+</body>
+</html>
